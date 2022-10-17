@@ -1,4 +1,5 @@
-﻿using gerenciamento_estacionamento.Dominio.Interfaces;
+﻿using gerenciamento_estacionamento.Dominio.Enum;
+using gerenciamento_estacionamento.Dominio.Interfaces;
 
 namespace gerenciamento_estacionamento.Dominio.Entidades
 {
@@ -15,7 +16,7 @@ namespace gerenciamento_estacionamento.Dominio.Entidades
         private decimal PrecoPorHora { get; set; }
         private List<Veiculo> Veiculos { get; set; }
 
-        public void AdicionarVeiculo()
+        public void AdicionarVeiculo(Veiculo veiculo)
         {
             throw new NotImplementedException();
         }
@@ -28,6 +29,11 @@ namespace gerenciamento_estacionamento.Dominio.Entidades
         public void RemoverVeiculo()
         {
             throw new NotImplementedException();
+        }
+
+        public void Execute(DecisaoUsuarioEnum decisaoUsuario) 
+        {
+        
         }
     }
 }
