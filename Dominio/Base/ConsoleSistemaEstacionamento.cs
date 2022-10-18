@@ -1,5 +1,8 @@
-﻿using gerenciamento_estacionamento.Dominio.Enum;
+﻿using gerenciamento_estacionamento.Dominio.Entidades;
+using gerenciamento_estacionamento.Dominio.Enum;
 using System.ComponentModel;
+using System.Numerics;
+using System.Runtime.CompilerServices;
 
 namespace gerenciamento_estacionamento.Dominio.Base
 {
@@ -39,6 +42,33 @@ namespace gerenciamento_estacionamento.Dominio.Base
 
         public static void LimparConsole() => Console.Clear();
 
+        public static string ObterInformacoesVeiculo()
+        {
+            Console.WriteLine("Digite a placa do veículo:");
+            return Console.ReadLine();
+        }
+
+        public static void ConfirmarNovaConsultaMenu()
+        {
+            Console.WriteLine("Aperte enter para continuar...");
+            Console.ReadLine();
+
+            LimparConsole();
+        }
+
+        public static void MostrarVeiculos(List<Veiculo> veiculos)
+        {
+            foreach (var veiculo in veiculos)
+            {
+                Console.WriteLine(veiculo.PlacaVeiculo);
+            }
+        }
+
+        internal static void FinalizarEntradaVeiculo(string placa, decimal valorTotal) =>
+            Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+
+        public static void VeiculoSemTaxa() =>
+            Console.WriteLine("Veiculo não ira pagar estacionamento");
 
     }
 }

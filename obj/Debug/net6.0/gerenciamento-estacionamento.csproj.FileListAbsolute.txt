@@ -1,0 +1,15 @@
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.csproj.AssemblyReference.cache
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.AssemblyInfoInputs.cache
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.AssemblyInfo.cs
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.csproj.CoreCompileInputs.cache
+C:\Dev\gerenciamento-estacionamento\bin\Debug\net6.0\gerenciamento-estacionamento.exe
+C:\Dev\gerenciamento-estacionamento\bin\Debug\net6.0\gerenciamento-estacionamento.deps.json
+C:\Dev\gerenciamento-estacionamento\bin\Debug\net6.0\gerenciamento-estacionamento.runtimeconfig.json
+C:\Dev\gerenciamento-estacionamento\bin\Debug\net6.0\gerenciamento-estacionamento.dll
+C:\Dev\gerenciamento-estacionamento\bin\Debug\net6.0\gerenciamento-estacionamento.pdb
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.dll
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\refint\gerenciamento-estacionamento.dll
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.pdb
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\gerenciamento-estacionamento.genruntimeconfig.cache
+C:\Dev\gerenciamento-estacionamento\obj\Debug\net6.0\ref\gerenciamento-estacionamento.dll

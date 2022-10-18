@@ -16,24 +16,23 @@ namespace gerenciamento_estacionamento.Dominio.Entidades
         private decimal PrecoPorHora { get; set; }
         private List<Veiculo> Veiculos { get; set; }
 
-        public void AdicionarVeiculo(Veiculo veiculo)
-        {
-            throw new NotImplementedException();
-        }
+        public void AdicionarVeiculo(Veiculo veiculo) =>
+            Veiculos.Add(veiculo);
 
-        public List<Veiculo> ListarVeiculos()
-        {
-            throw new NotImplementedException();
-        }
+        public List<Veiculo> BuscarVeiculosNoEstacionameto() => 
+              Veiculos;
 
-        public void RemoverVeiculo()
+        public decimal RemoverVeiculo(string placaVeiculo)
         {
-            throw new NotImplementedException();
-        }
+            Veiculo? veiculoDeSaida = Veiculos.FirstOrDefault(x => x.PlacaVeiculo == placaVeiculo);
 
-        public void Execute(DecisaoUsuarioEnum decisaoUsuario) 
-        {
-        
+            if (veiculoDeSaida is null)
+                return 0;
+
+            Veiculos.Remove(veiculoDeSaida);
+
+            return veiculoDeSaida.CalcularHorasNoEstacionamento() * PrecoPorHora + PrecoInicial; 
+
         }
     }
 }

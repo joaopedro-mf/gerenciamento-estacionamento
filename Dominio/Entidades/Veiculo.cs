@@ -6,7 +6,7 @@ namespace gerenciamento_estacionamento.Dominio.Entidades
     {
         public Veiculo(string placaVeiculo)
         {
-            if (VerificarAutenticidadePlaca(placaVeiculo))
+            if (!VerificarAutenticidadePlaca(placaVeiculo))
                 throw new ArgumentException("Placa de veiculo invalida");
 
             PlacaVeiculo = placaVeiculo;
@@ -16,10 +16,8 @@ namespace gerenciamento_estacionamento.Dominio.Entidades
         public string PlacaVeiculo { get; set; }
         public DateTime HorarioEntrada { get; set; }
 
-        public int CalcularHorasNoEstacionamento()
-        {
-            throw new NotImplementedException();
-        }
+        public int CalcularHorasNoEstacionamento() =>
+            (DateTime.Now - HorarioEntrada).Hours;
 
         private bool VerificarAutenticidadePlaca(string placaVeiculo) =>
             placaVeiculo.Length == 6; 
